@@ -1,0 +1,8 @@
+Clase 1 diplomado 
+Comandos linux (usamos git bash para practicar)
+
+pwd para saber donde estoy
+ls para listar el contenido de la carpeta 
+cd / para ir a la raíz del sistema operativo 
+grep encontrar patrón en un texto 
+nan

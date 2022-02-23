@@ -1,0 +1,2 @@
+Git. 
+Control de versiones. Repositorios. Mantener actualizado el código, ver cambios, devolver archivos a como estaba en un momento pasado. 
