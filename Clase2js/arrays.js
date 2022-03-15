@@ -2,6 +2,8 @@
 
 var array1= [1,2,3,4,5,6, "numeros", true] //separados por ,
 //var arrayColor = ["pink","blue","red"] 
+var element = array1[0] //me va a mostrar la posición 0 de mi arreglo 
+console.log(element)
 
 // array1.find //encontrar dentro de un array algo
 // array1.forEach(element => alert(element)) //recorrer, element va a estar recorriendo el array, cada vez que me haga un elemento me haga una alert
