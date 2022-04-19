@@ -1,0 +1,23 @@
+.input-form{
+    background-color: aquamarine; 
+    text-align: center;
+   
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Button_form{
+    border-radius: 10px;
+    display: block;
+    border-style: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+.Button_form:hover{
+    background: blue;
+ }
+
+ form{
+     text-align: center;
+ }
+ 

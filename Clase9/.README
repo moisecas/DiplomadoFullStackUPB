@@ -1,0 +1,4 @@
+DOM 
+Es un objeto creado por el navegador que mapea o modela el documento html 
+Permite interacturar desde JS. (CRUD)
+Este objeto se llama document 
