@@ -9,9 +9,21 @@ button_submit.addEventListener("click", ingresarText,false) //cuando suceda el e
 function ingresarText(){
     const nombre = input_name.value
     const apellido = input_last_name.value
-    const nombres = [nombre,apellido] 
+    const persona = {nombre,apellido} 
+    localStorage.setItem("persona", JSON.stringify(persona))  //aplicando localstorage en este formulario 
     NameView.innerText=nombre
     LastNameView.innerText=apellido
-    document.write(nombres) 
+    
 } 
+
+window.addEventListener("load",cargar(),false) 
+
+function cargar(){ //cargar local storage 
+    for (let index = 0; index < localStorage.length; index++) { //recogienod mi local storage 
+        let clave = localStorage.key(index)        
+        let persona = JSON.parse( localStorage.getItem(clave))
+        
+        
+    }
+}
 
