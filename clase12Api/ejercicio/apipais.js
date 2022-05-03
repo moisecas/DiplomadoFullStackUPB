@@ -1,12 +1,14 @@
 alert("Bienvenido a api paises, busca banderas de paises. Elaborado por @moisecas") 
 
-const api_url = "https://restcountries.com/v3.1/all"  
+
+
+const api_url = "https://api.catboys.com/img"  
 
 const spanError = document.getElementById('error') 
 
 async function loadcountrie(){
     const res = await fetch(api_url)
-    const data = await res.json();
+    const data = await res.json(); //recorrer en un array para sacar los datos
     console.log("load")
     console.log(data)
     if(res.status !==200){
@@ -31,4 +33,4 @@ async function loadcountrie(){
 
 loadcountrie() 
 
-  
+ 
