@@ -19,14 +19,19 @@ const saludar=()=>{
         }, 8000)//se ejecuta despues de 8 segundos
     }
     })
-}
+    }
+
+
 saludar().then(res=>{
     console.log(res)//mostrará hola mundo
+
     let responder= "hola "+res.nombre+" "+res.apellido+" "+res.edad //concateno con el nombre y apellido
     console.log(responder)//mostrará hola Juan Perez 23
+
 }).catch(err=>{ //si hay error, se ejecuta reject
     console.log(err)
 })
+
 console.log("esto se debe imprimir antes de que se ejecute la promesa")
 
 for (let index = 0; index<100; index++) {
