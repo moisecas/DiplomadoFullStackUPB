@@ -9,7 +9,7 @@ function mostrarnumeros(num) {
             let numero =  Math.floor(Math.random() * 6);   
             resolve(alert(numero)); //resolviendo la promesa
         if(num == numero) {
-                resolve(alert("Los numeros son iguales")); //rechazando la promesa
+                resolve(alert("Los numeros son iguales")); //resolviendo la promesa
             }
         } else {
             reject(alert("el numero es negativo: " + num));//rechazando la promesa  
