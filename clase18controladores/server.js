@@ -42,6 +42,26 @@ app.post('/usuarios', (req, res) => {
     res.send(usuario);
 })
 
+//get para mostrar usuarios por id
+app.get('/usuarios/:id', (req, res) => {
+    const usuario = usuarios.find(usuario => usuario.id === parseInt(req.params.id));
+    if (!usuario) {
+        return res.status(404).send('El usuario no existe');
+    }
+    res.send(usuario);
+})
+
+//delete para eliminar usuarios por id
+app.delete('/usuarios/:id', (req, res) => {
+    const usuario = usuarios.find(usuario => usuario.id === parseInt(req.params.id));
+    if (!usuario) {
+        return res.status(404).send('El usuario no existe');
+    }
+    const index = usuarios.indexOf(usuario); //busca el indice del usuario, indexof busca el indice del elemento que se le pasa
+    usuarios.splice(index, 1); //elimina el elemento del indice que se le pasa
+    res.send(usuario); //envia el usuario eliminado 
+})
+
 //mensaje error 404
 app.use((req, res, next) => {
     res.status(404).send('Error 404');

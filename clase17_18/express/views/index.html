@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index para nodejs</title>
+</head>
+<body style="background-color:black">
+    <h1 style="color: white">Pagina 1</h1> 
+    <button id="button" onclick=""> ver </button>
+    <script>
+        //mostrar en una ruta un archivo html
+        document.getElementById('button').addEventListener('click', function(){
+            fetch('http://localhost:3000/ver')
+            .then(function(response){
+                return response.text();
+            })
+            .then(function(text){
+                document.body.innerHTML = text;
+            })
+        })
+    </script>
+</body>
+</html>
