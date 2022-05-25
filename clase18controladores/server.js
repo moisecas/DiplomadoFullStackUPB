@@ -53,8 +53,8 @@ app.get('/usuarios/:id', (req, res) => {
 
 //delete para eliminar usuarios por id
 app.delete('/usuarios/:id', (req, res) => {
-    const usuario = usuarios.find(usuario => usuario.id === parseInt(req.params.id));
-    if (!usuario) {
+    const usuario = usuarios.find(usuario => usuario.id === parseInt(req.params.id)); // busca el usuario por id en el array de usuarios 
+    if (!usuario) { //si no existe el usuario 
         return res.status(404).send('El usuario no existe');
     }
     const index = usuarios.indexOf(usuario); //busca el indice del usuario, indexof busca el indice del elemento que se le pasa
