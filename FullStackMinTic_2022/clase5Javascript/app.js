@@ -70,7 +70,7 @@ document.write("<p>Objeto nombre: "+objeto.nombre+"</p>");
 document.write("<p>Objeto apellido: "+objeto.apellido+"</p>");
 document.write("<p>Objeto edad: "+objeto.edad+"</p>");
 document.write("<p>Objeto direccion calle: "+objeto.direccion.calle+"</p>");
-document.write("<p>Objeto direccion numero: "+objeto.direccion.numero+"</p>"); 
+document.write("<p>Objeto direccion numero: "+objeto.direccion.numero+"</p>"); //objeto.direccion.numero
 
 
 
