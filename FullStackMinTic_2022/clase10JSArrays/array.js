@@ -69,3 +69,13 @@ const microsoft = employees2.filter(employee => employee.enterprise == "Microsof
 console.log("*****filter enterprise google name*******");
 const empleadoGoogle = employees2.filter(employee => employee.enterprise == "Google"); //recibe employee como parametro y lo imprime en el array empleadoGoogle
 console.log(empleadoGoogle); //muestra el array empleadoGoogle 
+
+//reduce
+console.log("*****reduce enterprise google name*******");
+const empleadoGoogle2 = employees2.reduce((total, employee) => { //reduce es para sumar, total es el acumulador
+    if (employee.enterprise == "Google") {
+        total.push(employee.name);
+    }
+    return total;
+})//recibe employee como parametro y lo imprime en el array empleadoGoogle2
+console.log(empleadoGoogle2); //muestra el array empleadoGoogle2
