@@ -1,4 +1,4 @@
-import { useState, useContext, createContext } from "react";
+import { useState, useContext, createContext, useEffect } from "react";
 import getProductsRequest from "../api/product"; //importar la petición get a la base de datos
 
 
@@ -21,10 +21,14 @@ export const ProductProvideer= (children) => {
   //traer los productos del back 
   const getProducts = async () => {
     const response = await getProductsRequest();
-    setProducts(response.data);
-    console.log(response.data)
-
+    setProducts(response.data);  
+    
   }
+
+  useEffect(() => { //useEffect para que se ejecute una vez que se renderice el componente
+    getProducts();
+  }, [getProducts])
+
   return <productContext.Provider value={{
     products,
     setProducts, //compartiendo el estado de products
