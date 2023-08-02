@@ -7,3 +7,4 @@ const saludar = (nombre) => { // funcion de flecha que recibe un parametro nombr
 };
 
 console.log(saludar("moises")) // imprime en consola el valor de la funcion saludar con el parametro moises
+
