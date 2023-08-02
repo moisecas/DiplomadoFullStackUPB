@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog Ejemplo</title>
   <link rel="stylesheet" href="/Backend/html/index.css">
 </head>
 <body>
   <header>
-    <h1>Blog Ejemplo</h1>
+    <h1>Blog de Ejemplo</h1>
     <nav>
-      <!-- Aquí puedes agregar enlaces a otras páginas del blog -->
       <ul>
         <li><a href="#">Inicio</a></li>
+        <li><a href="#">Artículos</a></li>
         <li><a href="#">Acerca de</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
@@ -18,38 +17,37 @@
   </header>
 
   <div class="container">
-    <div class="sidebar">
-      <!-- Contenido de la barra lateral -->
-      <h2>Barra Lateral</h2>
-      <p>Este es el contenido de la barra lateral.</p>
-    </div>
-
     <div class="main-content">
-      <!-- Artículos del blog -->
       <div class="article">
-        <h2>Título del Artículo 1</h2>
-        <p>Contenido del artículo 1.</p>
+        <h2>Título del artículo 1</h2>
+        <p>Contenido del artículo 1...</p>
         <div class="crud-buttons">
-          <button>Edit</button>
-          <button>Delete</button>
+          <button>Editar</button>
+          <button>Eliminar</button>
         </div>
       </div>
 
       <div class="article">
-        <h2>Título del Artículo 2</h2>
-        <p>Contenido del artículo 2.</p>
+        <h2>Título del artículo 2</h2>
+        <p>Contenido del artículo 2...</p>
         <div class="crud-buttons">
-          <button>Edit</button>
-          <button>Delete</button>
+          <button>Editar</button>
+          <button>Eliminar</button>
         </div>
       </div>
-
-      <!-- Puedes agregar más artículos aquí -->
     </div>
+
+    <aside class="sidebar">
+      <form class="search-form">
+        <input type="text" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+      </form>
+    </aside>
   </div>
 
   <footer>
-    <p>Derechos de Autor &copy; 2023 Blog Ejemplo. Todos los derechos reservados.</p>
+    <p>Derechos de autor &copy; 2023 Blog de Ejemplo</p>
   </footer>
 </body>
 </html>
+
